@@ -5,15 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { EmployeeTitlePipe } from './components/employeeTitle.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    EmployeeTitlePipe
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule
   ],
   providers: [],
