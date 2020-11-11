@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class EmployeeListComponent implements OnInit {
   employees: any[];
 
+  selectedEmployeeCountRadionButton: string = 'All';
+
   constructor() {}
 
 
@@ -21,6 +23,10 @@ export class EmployeeListComponent implements OnInit {
       { code: 'Emp5', name: 'Jessica', gender: 'Female', annualSalary: 5500, dateOfBirth: '25/01/1988' },
 
     ]
+  }
+
+  onEmployeeCountRadioButtonChange(selectedRadioButtonValue: string):void {
+    this.selectedEmployeeCountRadionButton = selectedRadioButtonValue;
   }
 
   getTotalEmployeeCount(): number{
