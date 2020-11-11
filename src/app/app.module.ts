@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeTitlePipe } from './components/employeeTitle.pipe';
+import { EmployeeCountComponent } from './components/employee-count/employee-count.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { EmployeeTitlePipe } from './components/employeeTitle.pipe';
     AppComponent,
     EmployeeComponent,
     EmployeeListComponent,
-    EmployeeTitlePipe
+    EmployeeTitlePipe,
+    EmployeeCountComponent
   ],
   imports: [
   BrowserModule,
